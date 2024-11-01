@@ -11,8 +11,15 @@ function Navbar(){
 
     return(
         <div id="navbar">
-            <button onClick={scrollToTop} id='hometext'>
+            <button onClick={scrollToTop} className='navOptions' id="hometext">
                 Home
+            </button>
+
+            <button onClick={scrollToTop} className='navOptions'>
+                CV
+            </button>            
+            <button onClick={scrollToTop} className='navOptions'>
+                Blog
             </button>
         </div>
     )

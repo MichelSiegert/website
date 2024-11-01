@@ -1,0 +1,22 @@
+.card{
+    border: 1px solid white;
+    width: 45vw;
+    height: 300px;
+    justify-items: center;
+    align-content: center;
+    margin:10px;
+    text-align: center;
+}
+.cards{
+    display:flex; 
+}
+
+@media (max-width: 768px) {
+    .card{
+        width: 80vw;
+    }
+    .cards{
+        display:grid; 
+        justify-items: center;
+    }
+}
