@@ -1,0 +1,36 @@
+.icon {
+    width: 64px;
+    height: 64px;
+    padding:3px;
+    margin: 2px;
+    background:#000;
+}
+
+.mainBody{
+    width: fit-content;
+    overflow: auto;
+    height: 460px;
+    font-size: large;
+    text-align: justify;
+    padding-left: 6vw;
+    padding-right: 5vw;
+}
+
+.unselectedIcon {
+    width:64px;
+    height: 64px;
+    filter: grayscale(100%);
+    padding:3px;
+    margin: 2px;
+    
+    background:#000;
+}
+
+.languagesSection{
+    width: 80%; 
+    justify-self: end;
+    background:#222;
+    margin-right: 3vw;
+    display: flex;
+    flex-direction: row-reverse;
+}

@@ -1,17 +1,21 @@
 import './App.css';
-import Cards from './components/Cards/Cards';
-import Introduction from './components/introduction/intro';
-import Navbar from './components/navbar/navbar';
-import Quote from './components/quote/quote';
+import Cards from './mainPage/Cards/Cards';
+import Email from './mainPage/Email/Email';
+import Introduction from './mainPage/introduction/intro';
+import Lang from './mainPage/language/lang';
+import Navbar from './mainPage/navbar/navbar';
+import Quote from './mainPage/quote/quote';
 
 function App() {
   return (
-    <h1 className="text-3xl">
+    <div className="text-3xl">
       <Navbar/>
       <Introduction/>
       <Cards/>
       <Quote/>
-    </h1> 
+      <Lang/>
+      <Email/>
+    </div> 
   );
 }
 
