@@ -28,7 +28,7 @@ function Counter({ target, duration }) {
     return () => cancelAnimationFrame(requestRef.current);
   }, [target, duration]);
 
-  return <div style={{ fontSize: '3em', fontWeight: 'bold', textAlign: 'center' } } className='counter'>{count}</div>;
+  return <div className='counter'>{count}</div>;
 }
 
 export default Counter;

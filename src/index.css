@@ -13,12 +13,8 @@
   
 
 body{
-    height: 20000px;
     scroll-behavior: smooth;
     color: var(--primary-Color);
     background:var(--primary-background);
     font-family: var(--font-primary);
-
-
-
   }

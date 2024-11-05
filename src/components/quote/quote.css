@@ -1,0 +1,46 @@
+.quoteText{
+    font-style: italic;
+    font-size: large;
+    margin-left: 10vw;
+    text-align: justify;
+    margin-right: 6vw;
+    text-decoration-line: none;
+    max-height: 250px;
+    overflow: auto;
+    padding-bottom: 15px;
+}
+.startQuote{
+    margin-left: 3vw;
+    font-size: 100px;
+    padding-top: 10px;
+    margin-bottom: -40px;
+}
+
+.quoteBox{
+    padding-Top:20px;
+    background:#222;
+    border-Radius:20px;
+    width:80vw;
+    margin-left: 1vw;
+}
+
+.quoter {
+    text-align: end;
+    margin-right: 2vw;
+    font-size: large;
+    padding-bottom: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .quoteBox{
+        margin-left: 0%;
+        place-self: center;
+        width:95vw;
+    }
+
+    .startQuote{
+        margin-bottom: 0px;
+    }
+    
+}

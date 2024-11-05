@@ -2,6 +2,13 @@
     font-size: 3em;
     width: 200px;
     font-weight: bold;
-    text-align: center;
     height: 100px;
+    text-align:center;
+    align-content: center;
+}
+
+@media (max-width: 768px) {
+.counter {
+    font-size: 2em;
+    }
 }

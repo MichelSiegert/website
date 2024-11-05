@@ -1,5 +1,6 @@
 .card{
-    border: 1px solid white;
+    border-radius: 20px;
+    background-color: #222;
     width: 45vw;
     height: 300px;
     justify-items: center;
@@ -9,14 +10,21 @@
 }
 .cards{
     display:flex; 
+    margin-bottom: 85px;
 }
+
 
 @media (max-width: 768px) {
     .card{
+        
+        height: auto;
         width: 80vw;
     }
     .cards{
         display:grid; 
         justify-items: center;
+    }
+    .bottomText {
+        font-size: 0.8em;
     }
 }
