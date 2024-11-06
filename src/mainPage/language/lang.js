@@ -79,7 +79,7 @@ function Lang(){
             </div>
             <motion.div className={`mainBody`}
             animate= {ctl}
-            transition ={{duration : 0.2, delay: 0.0}}
+            transition ={{duration : 0.3, delay: 0.0}}
             variants={variants}
             initial="middle"
             >
