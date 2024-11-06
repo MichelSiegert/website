@@ -14,15 +14,17 @@ function Quote(){
         }
         }, [isInview])
 
-    return (    
+        const variants = {
+            hidden: { x: -100, opacity: 0 },
+            visible: { x: 0, opacity: 1 },
+          };
+
+    return (
         <div 
-        ref={ref}>    
+        ref={ref}>
             <motion.div
             ref={ref}
-            variants={{
-                hidden: {opacity:  0, x:-75},
-                visible: {opacity: 1, x:0}
-        }}
+            variants={variants}
         initial="hidden"
         animate= {ctl}
         transition ={{duration : 1.0, delay: 0.5}}>
