@@ -10,7 +10,7 @@
       width: fit-content;
       width: 100%;
     overflow: auto;
-    max-height: 640px;
+    max-height: 360px;
     font-size: large;
     justify-items: flex-end;
     margin-top: 20px;
@@ -37,8 +37,13 @@
     border-radius: 25px;
     
     padding-bottom: 20px;
+    margin-bottom:60px;
+
 }
 
+.header{
+    text-decoration: underline;
+}
 .Iconbar{
     margin-right: 3vw;
     display: flex;

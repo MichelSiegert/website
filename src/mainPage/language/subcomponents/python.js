@@ -11,7 +11,6 @@ In my machine learning work, I leverage Python’s most popular libraries and fr
         <li><strong>Data Manipulation & Analysis:</strong> Pandas, NumPy, SciPy, </li>
         <li><strong>Machine Learning & Deep Learning:</strong> TensorFlow, Keras, Scikit-Learn, OpenCV</li>
         <li><strong>Data Visualization:</strong> Matplotlib, Seaborn</li>
-        <li><strong>Natural Language Processing:</strong> NLTK, SpaCy</li>
     </ul>
 </div>
 By combining these tools, I build, train, and evaluate machine learning models that are accurate, scalable, and efficient. From developing deep learning models with TensorFlow and Keras to processing and analyzing large datasets with Pandas and NumPy, I am dedicated to creating data-driven solutions that meet complex challenges. My experience spans tasks such as classification, regression, clustering, and NLP.
