@@ -1,0 +1,23 @@
+.upperText{
+    position: absolute;
+    top: 30%;
+    left: 200px;
+}
+
+.dateTime{
+    position:absolute;
+    left: 0px;
+    width: 130px;
+    top:33%;
+    font-size: medium;
+    font-style: italic;
+}
+
+.lowerText{
+    overflow: auto;
+    max-height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 200px;
+    font-size: medium;
+}

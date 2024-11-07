@@ -1,0 +1,36 @@
+.container{}
+
+.lineContainer {
+    position: relative;
+    width: 3px;
+    height: 200px;
+    left:150px;
+    background-color: white;
+  }
+
+  .vertical {
+    position: absolute;
+    height: 2px;
+    width: 300px;
+    top:99px;
+    background-color: white;
+  }
+  
+  .line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+  }
+  
+  .circle {
+    position: absolute;
+    top: 85px;
+    left: -14px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: #10bb87;
+    border: 3px solid white
+  }

@@ -64,6 +64,9 @@
 #submitEmail {
     margin-bottom: 3vw;
     margin-right: 3vw;
+    padding: 1vw;
+    border:1px solid white;
+    border-radius: 7px;
 }
 
 @media (max-width: 768px) {
