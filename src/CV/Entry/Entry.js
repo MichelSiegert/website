@@ -1,14 +1,22 @@
 import Line from "../Line/line";
 import "./Entry.css"
-function Entry (){
+function Entry (props){
+    const {date, upper, lower, color} = props;
     return (
-        <div style={{position:"relative", width:"500px"}}>
-            <Line/>
-            <div className="dateTime">Aug 2013 - Jul 2016</div>
-            <div className="upperText">Life Guard</div>
-            <div className="lowerText">ZERO RELEVANCE FOR PROGRAMMING BABEY! LOVE IT!ZERO RELEVANCE FOR PROGRAMMING BABEY! LOVE IT!ZERO RELEVANCE FOR PROGRAMMING BABEY! LOVE IT!ZERO RELEVANCE FOR PROGRAMMING BABEY! LOVE IT!ZERO RELEVANCE FOR PROGRAMMING BABEY! LOVE IT!</div>
+        <div className="entryContainer">
+            <Line color={color}/>
+            <div className="dateTime">{date}</div>
+            <div className="upperText">{upper}</div>
+            <div className="lowerText">{lower}</div>
         </div>
     )
 }
+
+Entry.defaultProps = {
+    date: "Aug 2013 - Jul 2016",
+    upper: "Life Guard",
+    lower: "ZERO RELEVANCE FOR PROGRAMMING BABEY! LOVE IT!ZERO RELEVANCE FOR PROGRAMMING BABEY! LOVE IT!ZERO RELEVANCE FOR PROGRAMMING BABEY! LOVE IT!ZERO RELEVANCE FOR PROGRAMMING BABEY! LOVE IT!ZERO RELEVANCE FOR PROGRAMMING BABEY! LOVE IT!",
+    color:"#10bb87"
+  };
 
 export default Entry;

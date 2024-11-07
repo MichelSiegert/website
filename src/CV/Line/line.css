@@ -11,7 +11,7 @@
   .vertical {
     position: absolute;
     height: 2px;
-    width: 300px;
+    width: 60vw;
     top:99px;
     background-color: white;
   }

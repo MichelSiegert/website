@@ -1,6 +1,5 @@
 import Navbar from "../navbar/navbar"
-import Entry from "./Entry/Entry"
-import Line from "./Line/line"
+import Timeline from "./Timeline/Timeline"
 
 function CV(){
 
@@ -8,11 +7,7 @@ function CV(){
     <div style={{paddingBottom:"50px"}}>
         <Navbar i={1}/>
         <div style={{marginLeft:"10%"}}>
-        <Entry/>
-        <Entry/>
-        <Entry/>
-        <Entry/>
-        <Entry/>
+            <Timeline/>
         </div>
     </div>)
 }

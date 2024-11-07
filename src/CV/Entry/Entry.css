@@ -1,9 +1,17 @@
 .upperText{
     position: absolute;
     top: 30%;
+    width: 60%;
     left: 200px;
+    overflow-y: auto;
+    height: 40px;
 }
 
+
+.entryContainer{
+    position:relative; 
+    width: auto;
+}
 .dateTime{
     position:absolute;
     left: 0px;
@@ -15,7 +23,8 @@
 
 .lowerText{
     overflow: auto;
-    max-height: 100px;
+    max-height: 120px;
+    max-width: 55vw;
     position: absolute;
     top: 50%;
     left: 200px;
