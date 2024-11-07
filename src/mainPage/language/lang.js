@@ -42,12 +42,12 @@ function Lang(){
             setTimeout(() => {
                 setIndex(newIndex);
                 ctl.start("right");
-              }, 300);
+              }, 250);
         
         setTimeout(() => {
           setIndex(newIndex);
           ctl.start("middle");
-        }, 600);
+        }, 500);
         return 
         } 
 
@@ -56,12 +56,12 @@ function Lang(){
             setTimeout(() => {
                 setIndex(newIndex);
                 ctl.start("left");
-              }, 300);
+              }, 250);
         
         setTimeout(() => {
           setIndex(newIndex);
           ctl.start("middle");
-        }, 600);
+        }, 500);
     };
 
     
@@ -79,7 +79,7 @@ function Lang(){
             </div>
             <motion.div className={`mainBody`}
             animate= {ctl}
-            transition ={{duration : 0.3, delay: 0.0}}
+            transition ={{duration : 0.25, delay: 0.0}}
             variants={variants}
             initial="middle"
             >
