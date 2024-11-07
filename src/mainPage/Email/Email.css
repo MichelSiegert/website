@@ -1,0 +1,76 @@
+.mailSection {
+    width: 80%;
+    background: #222;
+    margin: 20px;
+    justify-self: center;
+}
+
+#email {
+    margin-left: 5%;
+    color: black;
+    width: 40%;
+    border-radius: 5px;
+    margin-left: 3%;
+    font-size: medium;
+    padding: 5px;
+}
+
+.header{
+    padding-top: 20px;
+    padding-left: 10%;
+}
+
+.email{
+    margin-left: 10%;
+    font-size: x-large;
+}
+
+.textField {
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+    height: 400px;
+    width: 100%;
+    height: 200px;
+}
+
+.mailBody {
+    height: 100%;
+}
+
+.messageLabel {
+    justify-self: start;
+    margin-left: 10%;
+    color: white;
+    font-size: x-large;
+}
+
+#message{
+    color: black;
+    width: 80%;
+    height: 70%;
+    resize: none;
+    font-size: medium;
+    border-radius: 5px;
+    padding: 5px;
+}
+.submissionbar{
+    justify-items: end;
+    text-align: end;
+    margin: 2vw;
+}
+
+#submitEmail {
+    margin-bottom: 3vw;
+    margin-right: 3vw;
+}
+
+@media (max-width: 768px) {
+
+    #email {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    }
+
