@@ -9,7 +9,7 @@ import Quote from './quote/quote';
 function IndexPage() {
   return (
     <div className="">
-      <Navbar i={2}></Navbar>
+      <Navbar i={0}></Navbar>
       <Introduction/>
       <Cards/>
       <Quote/>

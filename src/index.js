@@ -9,7 +9,8 @@ import {
   Link,
 } from "react-router-dom";
 import IndexPage from './mainPage/indexPage';
-import Navbar from './navbar/navbar';
+import Blog from './Blog/Blog';
+import CV from './CV/CV';
 
 
 const router = createBrowserRouter(
@@ -19,11 +20,11 @@ const router = createBrowserRouter(
   },
   {
     path:"/CV",
-    element:<IndexPage/>
+    element:<CV/>
   },
   {
     path:"/Blog",
-    element:<IndexPage/>
+    element:<Blog/>
   }
 ])
 const root = ReactDOM.createRoot(document.getElementById('root'));

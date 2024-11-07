@@ -18,3 +18,9 @@ body{
     background:var(--primary-background);
     font-family: var(--font-primary);
   }
+
+.wip{
+  position: absolute;
+  left: 25%;
+  top: 40%;
+}
