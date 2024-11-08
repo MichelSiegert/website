@@ -10,12 +10,6 @@ const Timeline = ()=>{
             date="Feb 2024- Current"
         />
         <Entry
-                upper="Finishing Bachelors Degree in CS"
-                date="Mar 2024- Current" 
-                lower="and continuing in the Masters CS as a hobby to continue my lifelong learning."
-                color="#df3377"
-        />
-        <Entry
                     upper="Fullstack Developer / Marktbox GmbH" 
                     lower="Javascript, Typescript, Docker, Jest, Angular, ngrx, Azure Cloud, oAuth2 via Microsoft Identity" 
                     date="Jul 2023 - Jan 2024"

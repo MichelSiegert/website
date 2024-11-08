@@ -30,3 +30,5 @@
     left: 200px;
     font-size: medium;
 }
+
+@media (max-width: 768px) {.upperText {top:10%; height: 80px;}}
