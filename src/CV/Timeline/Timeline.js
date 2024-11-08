@@ -10,13 +10,56 @@ const Timeline = ()=>{
             date="Feb 2024- Current"
         />
         <Entry
+                upper="Finishing Bachelors Degree in CS"
+                date="Mar 2024- Current" 
+                lower="and continuing in the Masters CS as a hobby to continue my lifelong learning."
+                color="#df3377"
+        />
+        <Entry
                     upper="Fullstack Developer / Marktbox GmbH" 
                     lower="Javascript, Typescript, Docker, Jest, Angular, ngrx, Azure Cloud, oAuth2 via Microsoft Identity" 
                     date="Jul 2023 - Jan 2024"
         />
-        <Entry/>
-        <Entry/>
-        <Entry/>
+        <Entry
+            upper="Fullstack Developer / Crossnative"
+            lower="Javascript, Typescript, Docker, Kubernetes, Helm, Jest, JUnit, Cypress, Oauth, Swagger,ngrx, Hibernate, Spring boot, MYsql, Jira, Confluence, Bitbucket, Angular, ORM"
+            date="Jan 2023 - Jun 2023"
+        />
+        <Entry
+            upper="Java Developer / PAYONE"
+            lower="Java, Spring, Javascript, Jira, Confluence"
+            date="Aug 2021 - Dez 2021"
+        />
+        <Entry
+            upper="Test Engineer / HAW Kiel"
+            lower="Jest, Java, Kotlin, Cypress, Docker"
+            date="Mar 2021 - Aug 2021"
+        />
+        <Entry
+        upper="Beginning Bachelor Degree"
+        lower="Computer Sciecne At the University of Applied Sciences Kiel"
+        date="Aug 2019 - Jan 2024"
+        color="#df3377"
+
+        />
+        <Entry
+        upper="Test Developer / EDEKA NORD MBH "
+                date="Aug 2018 - Jul 2019" 
+                lower="Reproducing testcases and writing scripts using their own scripting library (now deprecated). "
+        />
+        <Entry
+        upper="Apprenticeship IT Assistant "
+                date="Aug 2016 - Jul 2018" 
+                lower="at the Theodor Litt School. 
+                TCP, HTML, Css, Js, Visual Basic, Assembly "
+        color="#df3377"
+        />
+        <Entry
+        upper="Life Guard / Kieler Bäder"
+        date="Aug 2013 - Jul 2016" 
+        lower=""
+        color="#7787cb"
+        />
     </div>)
 }
 
