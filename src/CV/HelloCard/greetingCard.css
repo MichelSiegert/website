@@ -1,0 +1,38 @@
+.greetingContainer{
+    margin-top: 100px;
+    margin-left: 10vw;
+    width: 80%;
+    height: 300px;
+    background-color: #222;
+    padding: 30px;
+    display: flex;
+    border-radius: 5px;
+}
+
+.imageGreeting{
+    width: 200px;
+    height:200px;
+    border-radius: 100px;
+    place-self: center;
+
+}
+
+.bottomTextGreeting{
+    font-size: large;
+    overflow: auto;
+    height: 80%;
+}
+
+
+@media (max-width: 768px) 
+{
+    .greetingContainer{
+        width: 100%;
+    }
+    .imageGreeting{
+        width: 130px;
+        height: 130px;
+    }
+
+    
+}

@@ -3,7 +3,9 @@ import Entry from "../Entry/Entry";
 const Timeline = ()=>{
     
     return(
-    <div>
+    <div
+    style={{marginLeft:"10%", marginTop:"10%"}}>
+        <div style={{marginLeft:"40px", marginBottom:"20px"}}> My Career:</div>
         <Entry 
             upper="Javascript Developer / DWC-Consulting" 
             lower="Javascript, Typescript, Docker, Kubernetes,  Swagger,  Jest, Bigquery, React, Google Cloud, Cloud functions, Cloud Run, Postgres, Mysql, MSSQL, Devops, Bitbucket pipelines. Jira/Confluence for tickets/Documentation." 
@@ -30,7 +32,7 @@ const Timeline = ()=>{
             date="Mar 2021 - Aug 2021"
         />
         <Entry
-        upper="Beginning Bachelor Degree"
+        upper="Bachelor Degree Computer Science"
         lower="Computer Sciecne At the University of Applied Sciences Kiel"
         date="Aug 2019 - Jan 2024"
         color="#df3377"
