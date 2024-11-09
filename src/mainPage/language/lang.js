@@ -1,6 +1,5 @@
 import { useState } from "react";
-import React, {useEffect, useRef} from "react"
-import {motion, useInView, useAnimation} from "framer-motion"
+import {motion, useAnimation} from "framer-motion"
 
 import ts from "./assets/ts.png"
 import js from "./assets/js.png"
@@ -21,7 +20,6 @@ function Lang(){
 
     let [index, setIndex] = useState(0)
     const context = [<Ts/>, <Js/>,<Java/>, <Kotlin/>, <Python/>, <Dart/>, <Go/>];
-    const [animation, setAnimation] = useState('');
     const ctl = useAnimation()
 
 

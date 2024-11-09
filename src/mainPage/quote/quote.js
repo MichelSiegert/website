@@ -12,7 +12,7 @@ function Quote(){
         if(isInview){
             ctl.start("visible")
         }
-        }, [isInview])
+        }, [isInview, ctl])
 
         const variants = {
             hidden: { x: -100, opacity: 0 },

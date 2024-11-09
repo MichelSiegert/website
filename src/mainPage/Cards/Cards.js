@@ -5,7 +5,7 @@ function Cards(){
     return (
         <div className="cards">
             <div className="card">
-                <Counter duration="800" target="5"/>
+                <Counter duration="800" target="4"/>
                 <div className="bottomText">Years of Work Experience</div>
                 
             </div>
