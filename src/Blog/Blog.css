@@ -1,0 +1,36 @@
+.blogLayout{
+    width: 100%;
+    margin-top: 100px;
+    display: grid;
+    justify-items: start;
+    justify-content: center;
+    align-content: center;
+}
+
+.entriesText{
+    margin-left: 11%;
+    margin-bottom: 20px;
+}
+
+.blogCard{
+    width: 70%;
+    max-height: 300px;
+    text-align: unset;
+margin-left: 10%;    background: #222;
+    padding: 20px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.blogCardText{
+    font-size: medium;
+}
+
+
+.scrollListLayout{
+    width: 80%;
+}
+
+.footer{
+    width: 100%;
+}
