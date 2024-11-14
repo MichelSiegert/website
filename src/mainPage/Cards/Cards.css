@@ -6,7 +6,7 @@
     justify-items: center;
     align-content: center;
     margin:10px;
-    text-align: center;
+    display: grid;
 }
 .cards{
     display:flex; 

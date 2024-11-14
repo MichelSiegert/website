@@ -51,6 +51,8 @@
     overflow-x: auto;
     justify-self: end;
     max-width: 90%;
+    justify-content: end;
+    justify-self: end;
 }
 
 @media (max-width: 768px) {
