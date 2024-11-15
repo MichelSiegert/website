@@ -34,3 +34,14 @@
     background-color: #10bb87;
     border: 3px solid white
   }
+  
+
+@media (max-width: 768px) {
+  .lineContainer {
+    position: relative;
+    width: 3px;
+    height: 250px;
+    left:5vw;
+    background-color: white;
+  }
+    }

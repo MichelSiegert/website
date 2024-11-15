@@ -1,10 +1,10 @@
 import Navbar from "../../../navbar/navbar";
-
+import "../bpStyle.css"
 function todoPost(){
 return (
 <div>
     <Navbar i={2}/>
-    <div style={{marginTop:"10%", marginLeft:"10%", fontSize:"medium", maxWidth:"60%"}}>
+    <div className="bpStyle">
     <div className="text-3xl pb-2">Work in Progress</div>
     <div>        
     Nothing here yet. But the functionality exists already for writing, so. I am currently writing some code for a museum to automate tours through it. It is 80% done, and I will soon make some test runs with it through the museum. I hope to have everything functional before that happens.

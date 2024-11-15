@@ -4,7 +4,8 @@
     width: 60%;
     left: 200px;
     overflow-y: auto;
-    height: 40px;
+    height: max-content;
+    font-size: x-large   ;
 }
 
 
@@ -22,13 +23,29 @@
 }
 
 .lowerText{
+
     overflow: auto;
     max-height: 120px;
     max-width: 55vw;
     position: absolute;
     top: 50%;
-    left: 200px;
+    left: 20vw;
     font-size: medium;
 }
 
-@media (max-width: 768px) {.upperText {top:10%; height: 80px;}}
+@media (max-width: 768px) {
+    .upperText {
+        top:10%; 
+        height: 80px;
+        left:20vw;
+        font-size: large;
+    }
+
+    .lowerText{font-size: medium;}
+
+    .dateTime{visibility: hidden;}
+
+    .entryContainer{
+        width: 90vw;
+    }
+}

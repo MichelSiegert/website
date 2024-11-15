@@ -1,0 +1,10 @@
+.bpStyle{margin-top:10%;
+    margin-left:10%; 
+    font-size:medium;
+    max-width:60%;
+}
+
+
+@media (max-width: 768px){
+    .bpStyle{min-width: 85%;}
+}

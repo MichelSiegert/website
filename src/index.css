@@ -24,3 +24,7 @@ body{
   left: 25%;
   top: 40%;
 }
+
+:root {
+  color-scheme: dark;
+}
