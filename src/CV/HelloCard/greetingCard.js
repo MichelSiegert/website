@@ -2,7 +2,7 @@ import "./greetingCard.css"
 
 import React, {useEffect, useRef} from "react"
 import {motion, useInView, useAnimation} from "framer-motion"
-import asdf from "./greeting.jpg"
+import asdf from "./portrait.png"
 function Greeting(){
     const ref = useRef(null)
     const isInview = useInView(ref, {once:false})
