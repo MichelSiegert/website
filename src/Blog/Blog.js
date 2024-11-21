@@ -13,7 +13,7 @@ function Blog(){
             <div className="entriesText">Entries</div>
             <Link to="/blog/finance1" className="blogCard">
                 <div className="headlineBlog">Exploring Trading Bot Logic: From Basics to Transformers Part 1 </div>
-                <div className="blogCardText">I’m planning to dive into building the logic for a trading bot using TensorFlow, trying it out as a mixed model. I’ll start with some simple trading logic, move on to using an LSTM, and then see if I can implement a Transformer. The idea is to learn more about these models and how they work in practice.</div>
+                <div className="blogCardText">Collecting data form the internet, Building the code necessary to test the effectivenes of a trading bot, and building a bot for testing it using only moving averages(ma) </div>
             </Link>
             <Link to="/blog/helloworld1" className="blogCard">
                 <div className="headlineBlog">Work in Progress.</div>
