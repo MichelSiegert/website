@@ -1,0 +1,25 @@
+#navbar{
+    -webkit-backdrop-filter: blur(9px);
+    backdrop-filter: blur(9px);
+    background-color: #80808080;
+    box-shadow: 0 0 4px #3d4a5d14, 0 2px 4px #3d4a5d1f;
+    height: 50px;
+    width: 100%;
+    position:fixed;
+    top:0;
+    margin:10;
+    left: 0;
+    padding-top: env(safe-area-inset-top);
+    z-index: 1000;
+    align-content: center;
+}
+
+
+#hometext{
+    color:var(--primary-accent)
+}
+
+.navOptions {
+    margin-right:3%;   
+     margin-left:3%;
+}
