@@ -3,7 +3,6 @@ import "../bpStyle.css"
 function todoPost(){
 return (
 <div>
-    <Navbar i={2}/>
     <div className="bpStyle">
     <div className="text-3xl pb-2">Work in Progress</div>
     <div>        

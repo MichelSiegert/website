@@ -18,7 +18,7 @@
 
 .quoteBox{
     padding-Top:20px;
-    background:#222;
+    background:var(--secondary-background);
     border-Radius:20px;
     width:80vw;
     margin-left: 1vw;

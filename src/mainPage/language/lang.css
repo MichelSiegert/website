@@ -31,7 +31,7 @@
 .languagesSection{
     width: 80%; 
     justify-self: flex-end;
-    background:#222;
+    background:var(--secondary-background);
 
     margin-right: 3vw;
     border-radius: 25px;

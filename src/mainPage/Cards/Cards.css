@@ -1,6 +1,6 @@
 .card{
     border-radius: 20px;
-    background-color: #222;
+    background-color: var(--secondary-background);
     width: 45vw;
     height: 300px;
     justify-items: center;

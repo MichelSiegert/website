@@ -15,7 +15,6 @@ import i9 from "./pred.png"
 function FinanceBlog(){
 return (
 <div>
-    <Navbar i={2}/>
     <div className="bpStyle">
         <div className="text-3xl pb-2">Setting up for Stock market Analysis. </div>
         <h1 className="text-xl underline">Introduction, goals, background </h1>

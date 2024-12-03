@@ -1,17 +1,17 @@
-#navbar{
-    -webkit-backdrop-filter: blur(9px);
-    backdrop-filter: blur(9px);
-    background-color: #80808080;
-    box-shadow: 0 0 4px #3d4a5d14, 0 2px 4px #3d4a5d1f;
-    height: 50px;
+#impressum{
     width: 100%;
-    position:fixed;
-    top:0;
-    margin:10;
-    left: 0;
-    padding-top: env(safe-area-inset-top);
-    z-index: 1000;
-    align-content: center;
+    justify-items: center;
+    font-size: medium;
+    background: var(--secondary-background);
+    max-width: 100%;
+}
+
+.impressumItems{
+    display: flex;
+}
+
+.impressumColumn{
+    margin-left: 16px;
 }
 
 
@@ -23,3 +23,13 @@
     margin-right:3%;   
      margin-left:3%;
 }
+
+@media (max-width: 768px) {
+    .impressumColumn{
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+    .impressumItems{
+        display: block;
+    }
+    }

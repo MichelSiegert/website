@@ -15,6 +15,7 @@ import CV from './CV/CV';
 import ContactForm from './Email/Email'
 import blogEntries from './Blog/blogPosts/blogList';
 import Navbar from './navbar/navbar';
+import Impressum from './Impressum/impressum';
 
 
 const Layout = () => (
@@ -22,6 +23,7 @@ const Layout = () => (
     <Navbar />
     <Outlet /> {}
     <ContactForm />
+    <Impressum/>
   </div>
 );
 

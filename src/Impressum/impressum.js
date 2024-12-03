@@ -1,32 +1,32 @@
-import './navbar.css'
+import './impressum.css'
 
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-const handleClick = () => {
-    window.scrollTo(0, 0);
-};
-
-function Navbar({i}){
+function Impressum(){
     return(
-        <div id="navbar">
-            <Link  
-            to="/" 
-            className='navOptions' 
-            id={i === 0? "hometext": ""}
-            onClick={handleClick}
->
-                Home
-            </Link>
-
-            <Link to="/CV" className='navOptions'id={i === 1? "hometext": "" } onClick={handleClick}>
-                CV
-            </Link>            
-            <Link to="/Blog"className='navOptions'id={i === 2? "hometext": "" }onClick={handleClick}>
-                Blog
-            </Link>
-        </div>
-    )
+        <div id="impressum" className='pl-10 max-w-full'>
+            <div className="text-3xl pb-5">Impressum </div>
+            <div className='impressumItems text-lg'> 
+                    <div className='impressumColumn'>
+                        <div>Website Owner / Operator:</div>
+                        <div>Name: Michel Siegert</div>
+                        <div>Contact Information</div>
+                    </div>
+                    <div className='impressumColumn'>
+                        <div>Address:</div>
+                        <div>Waisenhofstraße 27</div>
+                        <div>24103 Kiel </div>
+                        <div> Germany</div>
+                    </div>
+                   
+                    <div className="impressumColumn">
+                        <div> Email: Michel@Siegert.online</div>
+                        <div>Phone: +49 177 87 207 96</div>
+                    </div>
+                    <div className='max-w-52 impressumColumn'> Content Responsible in accordance with § 18 (2) MStV: Michel Siegert, Waisenhofstraße 27, 24103 Kiel.</div>
+                </div>
+            </div>
+    );
 }
 
-export default Navbar   
+export default Impressum   

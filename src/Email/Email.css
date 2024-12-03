@@ -1,6 +1,6 @@
 .mailSection {
     width: 80%;
-    background: #222;
+    background: var(--secondary-background);
     margin: 20px;
     justify-self: center;
 }
