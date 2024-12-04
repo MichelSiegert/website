@@ -18,10 +18,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "dockerRun": " npm run build && docker build -t \"website\" . && docker run -p 3000:80 website",
+    "docker": " npm run build && docker build -t \"website\" . && docker run -p 3000:80 website",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "googleBuild": "npm run build && docker build -t \"website\" . && docker tag website europe-west1-docker.pkg.dev/siegertpage/siegertonline/website:latest && docker push europe-west1-docker.pkg.dev/siegertpage/siegertonline/website"
+    "deploy": "npm run build && docker build -t \"website\" . && docker tag website europe-west1-docker.pkg.dev/siegertpage/siegertonline/website:latest && docker push europe-west1-docker.pkg.dev/siegertpage/siegertonline/website"
   },
   "eslintConfig": {
     "extends": [

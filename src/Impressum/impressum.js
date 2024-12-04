@@ -1,10 +1,19 @@
 import './impressum.css'
+import { Link } from 'react-router-dom';
 
 import React from 'react';
 
+
+
+
 function Impressum(){
+
+    const handleClick = () => {
+        window.scrollTo(0, 0);
+    };
+    
     return(
-        <div id="impressum" className='pl-10 max-w-full'>
+        <div id="impressum" className='pl-10 max-w-full pt-3'>
             <div className="text-3xl pb-5">Impressum </div>
             <div className='impressumItems text-lg'> 
                     <div className='impressumColumn'>
@@ -25,6 +34,10 @@ function Impressum(){
                     </div>
                     <div className='max-w-52 impressumColumn'> Content Responsible in accordance with § 18 (2) MStV: Michel Siegert, Waisenhofstraße 27, 24103 Kiel.</div>
                 </div>
+                <Link  
+            to="/privacy" 
+            className='navOptions text-sm ' 
+            onClick={() => handleClick()}>Privacy Policy</Link>
             </div>
     );
 }

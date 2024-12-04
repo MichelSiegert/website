@@ -16,6 +16,7 @@ import ContactForm from './Email/Email'
 import blogEntries from './Blog/blogPosts/blogList';
 import Navbar from './navbar/navbar';
 import Impressum from './Impressum/impressum';
+import Privacy from './Privacy/privacy';
 
 
 const Layout = () => (
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
       {
         path: "Blog",
         element: <Blog />,
+      },
+      {
+        path: "privacy",
+        element: <Privacy/>,
       },
       ...blogEntries,
     ],
