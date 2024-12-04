@@ -4,7 +4,7 @@ import React from 'react';
 
 function Privacy(){
     return(
-        <div  className='pl-10 pt-32 text-left max-w-full text-lg'>
+        <div  className='pl-10 pt-32 text-left w-11/12 text-lg text-justify hyphenate'>
 <h2 class="text-xl pt-10 pb-5">Privacy Policy</h2>
 
 

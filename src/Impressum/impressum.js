@@ -14,8 +14,9 @@ function Impressum(){
     
     return(
         <div id="impressum" className='pl-10 max-w-full pt-3'>
-            <div className="text-3xl pb-5">Impressum </div>
-            <div className='impressumItems text-lg'> 
+            <div className='justify-items-center grid'> 
+                <div className="text-3xl pb-5">Impressum </div>
+                <div className='impressumItems text-lg'>
                     <div className='impressumColumn'>
                         <div>Website Owner / Operator:</div>
                         <div>Name: Michel Siegert</div>
@@ -34,9 +35,10 @@ function Impressum(){
                     </div>
                     <div className='max-w-52 impressumColumn'> Content Responsible in accordance with § 18 (2) MStV: Michel Siegert, Waisenhofstraße 27, 24103 Kiel.</div>
                 </div>
+                </div>
                 <Link  
             to="/privacy" 
-            className='navOptions text-sm ' 
+            className='text-sm' 
             onClick={() => handleClick()}>Privacy Policy</Link>
             </div>
     );

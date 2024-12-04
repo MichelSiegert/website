@@ -1,6 +1,5 @@
 #impressum{
     width: 100%;
-    justify-items: center;
     font-size: medium;
     background: var(--secondary-background);
     max-width: 100%;
@@ -8,6 +7,8 @@
 
 .impressumItems{
     display: flex;
+    justify-items: center;
+
 }
 
 .impressumColumn{
