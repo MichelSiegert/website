@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import { Outlet } from "react-router-dom";
 
 import {
+  Outlet,
   createBrowserRouter,
   RouterProvider
   
@@ -17,6 +17,7 @@ import blogEntries from './Blog/blogPosts/blogList';
 import Navbar from './navbar/navbar';
 import Impressum from './Impressum/impressum';
 import Privacy from './Privacy/privacy';
+
 
 
 const Layout = () => (
@@ -61,3 +62,16 @@ root.render(
 
 );
 reportWebVitals();
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker
+      .register('/service-worker.js')
+      .then(reg => {
+        console.log('SW registered:', reg);
+      })
+      .catch(err => {
+        console.error('SW registration failed:', err);
+      });
+  });
+}
