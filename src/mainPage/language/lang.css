@@ -1,7 +1,6 @@
 .icon {
     width: 64px;
     height: 64px;
-    padding:3px;
     margin: 2px;
     background:#000;
 }
@@ -22,7 +21,6 @@
     width:64px;
     height: 64px;
     filter: grayscale(100%);
-    padding:3px;
     margin: 2px;
     
     background:#000;

@@ -4,16 +4,16 @@ const urlsToCache = [
   '/',
   '/index.html',
   '/favicon.ico',
-  '/assets/intro.mp4',
-  '/assets/dart.png',
-  '/assets/go.png',
-  '/assets/java.png',
-  '/assets/js.png',
-  '/assets/kotlin.png',
-  '/assets/python.png',
-  '/assets/ts.png',
+  '/assets/sintro.webm',
+  '/assets/dart.webp',
+  '/assets/go.webp',
+  '/assets/java.webp',
+  '/assets/js.webp',
+  '/assets/kotlin.webp',
+  '/assets/python.webp',
+  '/assets/ts.webp',
   "https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap",
-  "assets/portrait.jpg"
+  "assets/portrait.webp"
 ];
 
 self.addEventListener('install', (event) => {

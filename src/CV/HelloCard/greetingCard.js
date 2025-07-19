@@ -27,7 +27,7 @@ function Greeting(){
     animate= {ctl}
     transition ={{duration : 0.8, delay: 0.5}}
     className="greetingContainer">
-        <img className="imageGreeting" src ="assets/portrait.jpg" alt="portrait of me leaning against a wall."/>
+        <img className="imageGreeting" src ="assets/portrait.webp" alt="portrait of me leaning against a wall."/>
       <div style={{marginLeft:"10px"}}>
       <div >
         Hello there!

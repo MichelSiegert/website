@@ -5,8 +5,8 @@ function Introduction(){
     return (
     <div>
 <section className="video-section">
-<video autoPlay muted loop className="section-video">
-  <source src="assets/intro.mp4" type="video/mp4"/>
+<video autoPlay muted loop className="section-video" preload="none"  poster="assets/placeholder.webp"> loading="lazy">
+  <source src="assets/sintro.webm" type="video/webm"/>
   Your browser does not support the video tag.
 </video>
 
