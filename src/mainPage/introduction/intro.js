@@ -1,13 +1,12 @@
 import React from 'react';
 import "./intro.css"
-import video from "./intro.mp4"
 function Introduction(){
 
     return (
     <div>
 <section className="video-section">
 <video autoPlay muted loop className="section-video">
-  <source src={video} type="video/mp4"/>
+  <source src="assets/intro.mp4" type="video/mp4"/>
   Your browser does not support the video tag.
 </video>
 

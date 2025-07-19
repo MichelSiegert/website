@@ -1,16 +1,46 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./Email.css"
-import { useForm, ValidationError } from '@formspree/react';
 
 function ContactForm() {
-  const [state, handleSubmit] = useForm("meoqggyn");
-  if (state.succeeded) {
-      return <p>Message sent!</p>;
-  }
+  const [errors, setErrors] = useState([]);
+  const [submitting, setSubmitting] = useState(false);
+    const customSubmit = async (e) => {
+    e.preventDefault();
+
+    const form = e.target;
+    const formData = new FormData(form);
+    const plainObject = Object.fromEntries(formData.entries());
+    
+    if (false/*navigator.onLine*/) {
+      await fetch('https://formspree.io/f/meoqggyn', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: formData,
+      });
+      setSubmitting(true);
+
+    } else {
+      const transaction = db.transaction(["formSubmissions"], "readwrite");
+      transaction.oncomplete = (event) => {
+        console.log("All done!");
+      };
+
+      transaction.onerror = (event) => {
+        setErrors([...errors, event]);
+      };
+      const objectStore = transaction.objectStore("formSubmissions");
+      objectStore.add(plainObject); 
+            setSubmitting(true);
+
+      const registration = await navigator.serviceWorker.ready;
+      await registration.sync.register('form-sync');
+    }
+  };
+
   return (
     <div className='mailSection'>
         <div className='header'>Get in Touch: </div>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={customSubmit}>
             <div
             className='mailBody'>
                 <div>
@@ -24,11 +54,9 @@ function ContactForm() {
                     name="email"
                     placeholder='email address'
                 />
-                <ValidationError 
-                    prefix="Email" 
-                    field="email"
-                    errors={state.errors}
-                />
+                <p>
+                  {errors}
+                </p> 
                 </div>
 
                 <div className='textField'>
@@ -38,17 +66,15 @@ function ContactForm() {
                     name="message"
                     placeholder='your message...'
                 />
-                <ValidationError 
-                    prefix="Message" 
-                    field="message"
-                    id="message"
-                    errors={state.errors}
-                />
                 </div>
                 <div className="submissionbar">
-                <button type="submit" id="submitEmail" disabled={state.submitting}>
+                { 
+                !submitting ? 
+                <button type="submit" id="submitEmail" disabled={submitting}>
                     Submit
-                </button>
+                </button>:
+                  <p className='pb-8' disabled={!submitting}>Message sent!</p>
+                  }
                 </div>
             </div>
         </form>
@@ -60,6 +86,23 @@ function Email() {
   return (
     <ContactForm />
   );
+}
+
+export let db;
+const request = indexedDB.open("FormDatabase", 1);
+
+request.onsuccess = (event) => {
+    console.log(event);
+    db = event.target.result;
+    db.onerror = (event) => {
+        console.error(`Database error: ${event.target.error?.message}`);
+
+    };
+  }
+
+request.onupgradeneeded = (event) => {
+  const db = event.target.result;
+  db.createObjectStore("formSubmissions", { autoIncrement: true });
 }
 
 export default Email;

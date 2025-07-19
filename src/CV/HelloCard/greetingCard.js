@@ -2,7 +2,6 @@ import "./greetingCard.css"
 
 import React, {useEffect, useRef} from "react"
 import {motion, useInView, useAnimation} from "framer-motion"
-import asdf from "./portrait.jpg"
 function Greeting(){
     const ref = useRef(null)
     const isInview = useInView(ref, {once:false})
@@ -28,7 +27,7 @@ function Greeting(){
     animate= {ctl}
     transition ={{duration : 0.8, delay: 0.5}}
     className="greetingContainer">
-        <img className="imageGreeting" src ={asdf} alt="portrait of me leaning against a wall."/>
+        <img className="imageGreeting" src ="assets/portrait.jpg" alt="portrait of me leaning against a wall."/>
       <div style={{marginLeft:"10px"}}>
       <div >
         Hello there!
