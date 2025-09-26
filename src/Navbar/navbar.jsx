@@ -19,6 +19,7 @@ function Navbar(){
             className='navOptions' 
             id={index === 0? "hometext": ""}
             onClick={() => handleClick(0)}
+            
 >
                 Home
             </Link>

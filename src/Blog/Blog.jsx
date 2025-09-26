@@ -1,4 +1,4 @@
-import Navbar from "../navbar/navbar";
+import Navbar from "../Navbar/navbar";
 
 import React from 'react';
 import { Link } from 'react-router-dom';

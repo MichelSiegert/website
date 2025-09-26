@@ -6,8 +6,8 @@ function Entry (props){
         <div className="entryContainer">
             <Line color={color}/>
             <div className="dateTime">{date}</div>
-            <div className="upperText">{upper}</div>
-            <div className="lowerText">{lower}</div>
+            <div className="upperText overflow-hidden">{upper}</div>
+            <div className="lowerText  md:block hidden ">{lower}</div>
         </div>
     )
 }

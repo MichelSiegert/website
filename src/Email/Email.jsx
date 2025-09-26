@@ -53,6 +53,7 @@ function ContactForm() {
                     type="email" 
                     name="email"
                     placeholder='email address'
+                    className='border-gray-300 border-b-2'
                 />
                 <p>
                   {errors}
@@ -64,6 +65,7 @@ function ContactForm() {
                 <textarea
                     id="message"
                     name="message"
+                    className='border-gray-300 border-2'
                     placeholder='your message...'
                 />
                 </div>

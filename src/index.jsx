@@ -13,7 +13,7 @@ import Blog from './Blog/Blog';
 import CV from './CV/CV';
 import ContactForm from './Email/Email';
 import blogEntries from './Blog/blogPosts/blogList';
-import Navbar from './navbar/navbar';
+import Navbar from './Navbar/navbar';
 import Impressum from './Impressum/impressum';
 import Privacy from './Privacy/privacy';
 

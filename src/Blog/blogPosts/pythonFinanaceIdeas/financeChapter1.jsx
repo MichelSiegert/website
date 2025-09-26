@@ -1,4 +1,4 @@
-import Navbar from "../../../navbar/navbar";
+import Navbar from "../../../Navbar/navbar";
 import "../bpStyle.css";
 import i1 from "./image.png";
 import i2 from "./image1.png";

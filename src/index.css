@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
     --font-primary: 'Roboto Mono';
@@ -18,7 +16,7 @@ body{
     color: var(--primary-Color);
     background:var(--primary-background);
     font-family: var(--font-primary);
-  }
+    }
 
 .wip{
   position: absolute;
