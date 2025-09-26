@@ -1,4 +1,4 @@
-import Counter from "../Counter/counter";
+import Counter from "../Counter/counter.jsx";
 import "./Cards.css"
 
 function Cards(){

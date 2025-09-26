@@ -1,6 +1,4 @@
-import Navbar from "../navbar/navbar"
 import Timeline from "./Timeline/Timeline"
-import Email from "../Email/Email"
 import Greeting from "./HelloCard/greetingCard"
 function CV(){
 
