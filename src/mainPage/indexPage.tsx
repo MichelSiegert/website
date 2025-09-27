@@ -1,5 +1,5 @@
 import './App.css';
-import Cards from './Cards/Cards';
+import Cards from './Cards/Cards.tsx';
 import Introduction from './introduction/intro';
 import Lang from './language/lang';
 import Quote from './quote/quote';
@@ -7,11 +7,11 @@ import Quote from './quote/quote';
 function IndexPage() {
   return (
     <div className="">
-      <Introduction/>
-      <Cards/>
-      <Quote/>
-      <Lang/>
-    </div> 
+      <Introduction />
+      <Cards />
+      <Quote />
+      <Lang />
+    </div>
   );
 }
 
