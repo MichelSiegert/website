@@ -1,4 +1,3 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 
@@ -8,14 +7,14 @@ import {
   RouterProvider,
 } from 'react-router-dom';
 
-import IndexPage from './mainPage/indexPage';
-import Blog from './Blog/Blog';
-import CV from './CV/CV';
-import ContactForm from './Email/Email';
-import blogEntries from './Blog/blogPosts/blogList';
-import Navbar from './navbar/navbar';
-import Impressum from './Impressum/impressum';
-import Privacy from './Privacy/privacy';
+import IndexPage from './mainPage/indexPage.tsx';
+import Blog from './Blog/Blog.tsx';
+import CV from './CV/CV.tsx';
+import ContactForm from './Email/Email.tsx';
+import blogEntries from './Blog/blogPosts/blogList.tsx';
+import Navbar from './Navbar/Navbar.tsx';
+import Impressum from './Impressum/impressum.tsx';
+import Privacy from './Privacy/privacy.tsx';
 
 function Layout() {
   return (
@@ -48,9 +47,6 @@ root.render(<RouterProvider router={router} />);
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker
-      .register('/service-worker.js')
-      .catch((err) => {
-        console.error('SW registration failed:', err);
-      });
+      .register('/service-worker.js');
   });
 }

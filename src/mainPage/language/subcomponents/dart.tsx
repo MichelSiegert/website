@@ -1,9 +1,18 @@
 function Dart() {
   return (
     <div>
-      Dart, combined with the Flutter framework, is a powerful tool for building high-performance, cross-platform mobile applications. With a solid background in Dart, I specialize in developing seamless, responsive apps for both iOS and Android, using Flutter’s rich set of widgets and tools to create intuitive user interfaces and smooth user experiences.
+      Dart, combined with the Flutter framework,
+      is a powerful tool for building high-performance,
+      cross-platform mobile applications.
+      With a solid background in Dart, I specialize
+      in developing seamless, responsive apps for both iOS
+      and Android, using Flutter’s rich set of widgets and
+      tools to create intuitive user
+      interfaces and smooth user experiences.
 
-      In my experience with Dart and Flutter, I have worked on various projects, employing these essential tools and libraries:
+      In my experience with Dart and Flutter,
+      I have worked on various projects, employing
+      these essential tools and libraries:
 
       <div>
         <ul>
@@ -38,7 +47,15 @@ function Dart() {
           </li>
         </ul>
       </div>
-      Using Dart’s concise syntax and Flutter's powerful capabilities, I create high-quality mobile applications that provide fast, responsive experiences, whether users are interacting with the app on Android or iOS devices. From developing custom UIs to implementing robust state management solutions, my focus is on delivering apps that are not only functional but also visually appealing and easy to navigate.
+      Using Dart’s concise syntax and Flutter&apos;s
+      powerful capabilities, I create high-quality
+      mobile applications that provide fast, responsive
+      experiences, whether users are interacting with the
+      app on Android or iOS devices.
+      From developing custom UIs to implementing robust
+      state management solutions, my focus is on delivering
+      apps that are not only functional but also
+      visually appealing and easy to navigate.
       {' '}
     </div>
   );

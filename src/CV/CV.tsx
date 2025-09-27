@@ -1,5 +1,5 @@
-import Timeline from './Timeline/Timeline';
-import Greeting from './HelloCard/greetingCard';
+import Timeline from './Timeline/Timeline.tsx';
+import Greeting from './HelloCard/greetingCard.tsx';
 
 function CV() {
   return (

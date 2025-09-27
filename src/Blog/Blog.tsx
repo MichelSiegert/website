@@ -1,6 +1,4 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
-import Navbar from '../navbar/navbar';
 import './Blog.css';
 
 const handleClick = () => {
@@ -20,7 +18,7 @@ function Blog() {
         </Link>
         <Link to="/blog/helloworld1" className="blogCard" onClick={handleClick}>
           <div className="headlineBlog">Work in Progress.</div>
-          <div className="blogCardText">Due to time Constraints there is nothing here yet. I will write 2 Articles about a Kotlin app for a Robot that does tours in Museums and my work with CNN's in Python using Transfer Learning.</div>
+          <div className="blogCardText">Due to time Constraints there is nothing here yet. I will write 2 Articles about a Kotlin app for a Robot that does tours in Museums and my work with CNN&apos;s in Python using Transfer Learning.</div>
         </Link>
       </div>
     </div>

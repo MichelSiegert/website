@@ -1,10 +1,15 @@
 function Go() {
   return (
     <div>
-      I specialize in using Go to build high-performance APIs and microservices that run efficiently in cloud environments.
-      When performance, concurrency, and scalability are key, Go is my go-to choice, offering exceptional speed and low-latency processing that ensures optimal performance under heavy loads.
+      I specialize in using Go to build high-performance
+      APIs and microservices that run efficiently in cloud environments.
+      When performance, concurrency, and scalability
+      are key, Go is my go-to choice, offering exceptional
+      speed and low-latency processing that ensures optimal
+      performance under heavy loads.
 
-      In my work with Go, I’ve focused on developing fast and reliable APIs using the following tools and libraries:
+      In my work with Go, I’ve focused on developing fast
+      and reliable APIs using the following tools and libraries:
 
       <div>
         <ul>
@@ -40,7 +45,14 @@ function Go() {
           </li>
         </ul>
       </div>
-      Go’s simplicity and concurrency model make it ideal for building microservices and cloud-native applications. Whether handling thousands of API requests per second or processing large amounts of data in parallel, Go’s performance is unmatched. By utilizing Go’s lightweight goroutines and channels, I create highly efficient and scalable services that are both easy to maintain and perform exceptionally well in distributed systems.
+      Go’s simplicity and concurrency model make it ideal
+      for building microservices and cloud-native applications.
+      Whether handling thousands of API requests per second or
+      processing large amounts of data in parallel, Go’s
+      performance is unmatched. By utilizing Go’s lightweight
+      goroutines and channels, I create highly efficient and
+      scalable services that are both easy to maintain and
+      perform exceptionally well in distributed systems.
       {' '}
     </div>
   );

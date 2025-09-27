@@ -1,5 +1,5 @@
-import TodoPost from './BlogPost1/BlogPost1';
-import FinanceBlog from './pythonFinanaceIdeas/financeChapter1';
+import TodoPost from './BlogPost1/BlogPost1.tsx';
+import FinanceBlog from './pythonFinanaceIdeas/financeChapter1.tsx';
 
 const blogEntries = [
   { path: '/Blog/helloworld1', element: <TodoPost /> },

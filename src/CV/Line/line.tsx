@@ -1,6 +1,6 @@
 import './line.css';
 
-function Line(props: any) {
+function Line(props) {
   const { color } = props;
   return (
     <div className="container">

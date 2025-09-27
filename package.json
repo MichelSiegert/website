@@ -36,6 +36,7 @@
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "docker": " docker build -t \"website\" . && docker run -p 3000:80 website",
+    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
     "lint:fix": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --fix",
     "deploy": "docker build -t \"website\" . && docker tag website europe-west1-docker.pkg.dev/siegertpage/siegertonline/website:latest && docker push europe-west1-docker.pkg.dev/siegertpage/siegertonline/website && gcloud run deploy siegertonline --image europe-west1-docker.pkg.dev/siegertpage/siegertonline/website:latest --region europe-west1 --platform managed --allow-unauthenticated"
   },

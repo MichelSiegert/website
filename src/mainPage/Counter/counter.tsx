@@ -1,16 +1,16 @@
-import React, {
+import {
   useCallback, useEffect, useRef, useState,
 } from 'react';
 import './counter.css';
 
-function Counter({ target, duration }: any) {
+function Counter({ target, duration }) {
   const [count, setCount] = useState(0);
   const start = 0;
-  const requestRef:any = useRef();
+  const requestRef = useRef<number>();
 
-  const easeInOutQuad = (t: any) => (t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t);
+  const easeInOutQuad = (t: number) => (t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t);
 
-  const animateCounter = useCallback((startTime: any) => {
+  const animateCounter = useCallback((startTime) => {
     const elapsed = performance.now() - startTime;
     const progress = Math.min(elapsed / duration, 1);
     const easedProgress = easeInOutQuad(progress);

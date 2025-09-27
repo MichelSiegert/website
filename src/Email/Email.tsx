@@ -1,39 +1,28 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './Email.css';
 
+let db;
+
 function ContactForm() {
-  const [errors, setErrors]: any = useState([]);
-  const [submitting, setSubmitting]:[boolean, any] = useState(false);
-  const customSubmit = async (e: any) => {
+  const [errors, setErrors] = useState([]);
+  const [submitting, setSubmitting] = useState(false);
+  const customSubmit = async (e: { preventDefault: () => void; target; }) => {
     e.preventDefault();
 
     const form = e.target;
     const formData = new FormData(form);
     const plainObject = Object.fromEntries(formData.entries());
 
-    if (false/* navigator.onLine */) {
-      await fetch('https://formspree.io/f/meoqggyn', {
-        method: 'POST',
-        headers: { Accept: 'application/json' },
-        body: formData,
-      });
-      setSubmitting(true);
-    } else {
-      const transaction = db.transaction(['formSubmissions'], 'readwrite');
-      transaction.oncomplete = (event: any) => {
-        console.log('All done!');
-      };
+    const transaction = db.transaction(['formSubmissions'], 'readwrite');
+    transaction.onerror = (event: Event) => {
+      setErrors([...errors, event]);
+    };
+    const objectStore = transaction.objectStore('formSubmissions');
+    objectStore.add(plainObject);
+    setSubmitting(true);
 
-      transaction.onerror = (event: any) => {
-        setErrors([...errors, event]);
-      };
-      const objectStore = transaction.objectStore('formSubmissions');
-      objectStore.add(plainObject);
-      setSubmitting(true);
-
-      const registration: any = await navigator.serviceWorker.ready;
-      await registration.sync.register('form-sync');
-    }
+    const registration: ServiceWorkerRegistration = await navigator.serviceWorker.ready;
+    await registration.sync.register('form-sync');
   };
 
   return (
@@ -49,14 +38,15 @@ function ContactForm() {
               className="email"
             >
               Email Address:
+
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="email address"
+                className="border-gray-300 border-b-2"
+              />
             </label>
-            <input
-              id="email"
-              type="email"
-              name="email"
-              placeholder="email address"
-              className="border-gray-300 border-b-2"
-            />
             <p>
               {errors}
             </p>
@@ -94,19 +84,14 @@ function Email() {
   );
 }
 
-export let db: any;
 const request = indexedDB.open('FormDatabase', 1);
 
-request.onsuccess = (event: any) => {
-  console.log(event);
-  db = event.target.result;
-  db.onerror = (event2: any) => {
-    console.error(`Database error: ${event2.target.error?.message}`);
-  };
+request.onsuccess = (event: Event) => {
+  db = (event.target as IDBOpenDBRequest).result;
 };
 
-request.onupgradeneeded = (event: any) => {
-  const db = event.target.result;
+request.onupgradeneeded = (event: Event) => {
+  db = (event.target as IDBOpenDBRequest).result;
   db.createObjectStore('formSubmissions', { autoIncrement: true });
 };
 

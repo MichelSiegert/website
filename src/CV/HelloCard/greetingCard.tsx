@@ -1,6 +1,6 @@
 import './greetingCard.css';
 
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { motion, useInView, useAnimation } from 'framer-motion';
 
 function Greeting() {
@@ -36,7 +36,12 @@ function Greeting() {
         </div>
         <div className="bottomTextGreeting text-justify hyphenate md:leading-12">
           Or as we say in Northern Germany: Moin!
-          I am Michel, a Full Stack Developer with a passion for creating innovative applications and deploying them in cloud-native environments. I hold a Bachelor's degree in Computer Science and have several years of experience developing with Java, Python, Kotlin, JavaScript, and TypeScript.
+          I am Michel, a Full Stack Developer
+          with a passion for creating innovative applications and
+          deploying them in cloud-native environments. I hold
+          a Bachelor&apos;s degree in Computer Science and have several
+          years of experience developing with Java, Python
+          , Kotlin, JavaScript, and TypeScript.
         </div>
       </div>
     </motion.div>

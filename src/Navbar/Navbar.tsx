@@ -1,12 +1,12 @@
-import './navbar.css';
+import './Navbar.css';
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
   const [index, setIndex] = useState(0);
 
-  const handleClick = (i:any) => {
+  const handleClick = (i: number) => {
     setIndex(i);
     window.scrollTo(0, 0);
   };

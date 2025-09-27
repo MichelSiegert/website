@@ -1,5 +1,5 @@
 import './quote.css';
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { motion, useInView, useAnimation } from 'framer-motion';
 
 function Quote() {
@@ -31,7 +31,7 @@ function Quote() {
         transition={{ duration: 0.8, delay: 0.1 }}
       >
         <div className="quoteBox">
-          <div className="startQuote">"</div>
+          <div className="startQuote">&#34;</div>
           <span>
             <div className="quoteText">Mr. Siegert demonstrated that he could quickly adapt to new tasks. After a very short time, he was able to apply the acquired technical knowledge very successfully to the work processes. In new situations, Mr. Siegert always adapted confidently and very well due to his very quick comprehension skills. Thanks to his good endurance and stress resilience, he kept a cool head even in difficult situations and was able to act constructively.</div>
             <div className="quoter">-Crossnative employment reference</div>

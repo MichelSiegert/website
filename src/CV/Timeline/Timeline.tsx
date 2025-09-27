@@ -1,4 +1,4 @@
-import Entry from '../Entry/Entry';
+import Entry from '../Entry/Entry.tsx';
 
 function Timeline() {
   return (

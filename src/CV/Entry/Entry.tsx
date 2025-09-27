@@ -1,7 +1,7 @@
-import Line from '../Line/line';
+import Line from '../Line/line.tsx';
 import './Entry.css';
 
-function Entry(props: any) {
+function Entry(props) {
   const {
     date, upper, lower, color,
   } = props;
