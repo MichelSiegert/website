@@ -15,8 +15,8 @@ function Cards() {
       </div>
 
       <div className="card">
-        <Counter duration="300" target="1" />
-        <div className="bottomText">Scholarship</div>
+        <Counter duration="2000" target="15" />
+        <div className="bottomText">Successful Projects</div>
       </div>
     </div>
   );

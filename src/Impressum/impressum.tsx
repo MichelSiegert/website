@@ -1,5 +1,5 @@
+import { NavLink } from 'react-router';
 import './impressum.css';
-import { Link } from 'react-router-dom';
 
 function Impressum() {
   const handleClick = () => {
@@ -30,13 +30,13 @@ function Impressum() {
           <div className="max-w-52 impressumColumn"> Content Responsible in accordance with § 18 (2) MStV: Michel Siegert, Waisenhofstraße 27, 24103 Kiel.</div>
         </div>
       </div>
-      <Link
+      <NavLink
         to="/privacy"
         className="text-sm"
         onClick={() => handleClick()}
       >
         Privacy Policy
-      </Link>
+      </NavLink>
     </div>
   );
 }

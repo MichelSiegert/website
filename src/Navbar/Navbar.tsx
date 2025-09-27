@@ -1,33 +1,40 @@
 import './Navbar.css';
-
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router';
 
 function Navbar() {
-  const [index, setIndex] = useState(0);
+  const location = useLocation();
 
-  const handleClick = (i: number) => {
-    setIndex(i);
+  const handleClick = () => {
     window.scrollTo(0, 0);
   };
 
   return (
     <div id="navbar">
-      <Link
+      <NavLink
         to="/"
         className="navOptions"
-        id={index === 0 ? 'hometext' : ''}
-        onClick={() => handleClick(0)}
+        id={location.pathname === '/' ? 'hometext' : ''}
+        onClick={() => handleClick()}
       >
         Home
-      </Link>
+      </NavLink>
 
-      <Link to="/CV" className="navOptions" id={index === 1 ? 'hometext' : ''} onClick={() => handleClick(1)}>
+      <NavLink
+        to="/CV"
+        className="navOptions"
+        id={location.pathname === '/CV' ? 'hometext' : ''}
+        onClick={() => handleClick()}
+      >
         CV
-      </Link>
-      <Link to="/Blog" className="navOptions" id={index === 2 ? 'hometext' : ''} onClick={() => handleClick(2)}>
+      </NavLink>
+      <NavLink
+        to="/blog"
+        className="navOptions"
+        id={location.pathname === '/Blog' ? 'hometext' : ''}
+        onClick={() => handleClick()}
+      >
         Blog
-      </Link>
+      </NavLink>
     </div>
   );
 }

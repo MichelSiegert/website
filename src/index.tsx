@@ -2,11 +2,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 
 import {
-  Outlet,
-  createBrowserRouter,
-  RouterProvider,
-} from 'react-router-dom';
-
+  BrowserRouter, Routes, Route, Navigate, Outlet,
+} from 'react-router';
 import IndexPage from './mainPage/indexPage.tsx';
 import Blog from './Blog/Blog.tsx';
 import CV from './CV/CV.tsx';
@@ -27,22 +24,21 @@ function Layout() {
   );
 }
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <Layout />,
-    children: [
-      { index: true, element: <IndexPage /> },
-      { path: 'cv', element: <CV /> },
-      { path: 'blog', element: <Blog /> },
-      { path: 'privacy', element: <Privacy /> },
-      ...blogEntries,
-    ],
-  },
-]);
-
 const root = ReactDOM.createRoot(document.getElementById('root')!);
-root.render(<RouterProvider router={router} />);
+root.render(
+  <BrowserRouter>
+    <Routes>
+      <Route element={<Layout />}>
+        <Route path="/cv" element={<CV />} />
+        <Route path="/" element={<IndexPage />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+        {...blogEntries}
+      </Route>
+    </Routes>
+  </BrowserRouter>,
+);
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
