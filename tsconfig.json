@@ -1,17 +1,14 @@
 {
-    "compilerOptions": {
-    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+  "compilerOptions": {
     "target": "ES2022",
     "useDefineForClassFields": true,
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
-    "module": "esnext",
+    "module": "nodenext",
     "skipLibCheck": true,
     "types": ["react"],
-
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "moduleDetection": "force",
+    "moduleResolution": "nodenext",
     "noEmit": true,
     "jsx": "react-jsx",
+    "allowImportingTsExtensions":true
   }
 }

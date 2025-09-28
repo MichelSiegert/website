@@ -12,6 +12,7 @@ import blogEntries from './Blog/blogPosts/blogList.tsx';
 import Navbar from './Navbar/Navbar.tsx';
 import Impressum from './Impressum/impressum.tsx';
 import Privacy from './Privacy/privacy.tsx';
+import './i18n.ts';
 
 function Layout() {
   return (
