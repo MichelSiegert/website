@@ -1,6 +1,9 @@
+import { useTranslation } from 'react-i18next';
 import './intro.css';
 
 function Introduction() {
+  const { t } = useTranslation();
+
   return (
     <div>
       <section className="video-section">
@@ -11,12 +14,11 @@ function Introduction() {
         </video>
 
         <div className="overlay-text">
-          <h1 className="videoTitle">Modern Web Development for the Cloud</h1>
+          <h1 className="videoTitle">
+            {t('heroSectionTitle')}
+          </h1>
           <p className="videoText">
-            {' '}
-            Empower your digital presence, build scalable solutions – as a fullstack developer,
-            I create cloud-native web applications that are robust,
-            adaptable, and ready for the future.
+            {t('heroSectionSubtitle')}
           </p>
         </div>
 

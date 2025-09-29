@@ -1,6 +1,25 @@
-{        
+{
     "Title": "Michel Siegerts Website",
     "CV": "Lebenslauf",
-    "Home": "Home",
-    "Blog": "Blog"
+    "Home": "Startseite",
+    "Blog": "Blog",
+    "heroSectionTitle": "Modernes Web Development in der Cloud",
+    "heroSectionSubtitle": "Stärken Sie Ihre digitale Präsenz mit skalierbaren, cloudnativen Webanwendungen, die robust, anpassungsfähig und zukunftssicher sind.",
+    "workExperienceCard": "Jahre Berufserfahrung",
+    "ServerUptime": "Service-Verfügbarkeit",
+    "SuccessfulProjects": "Erfolgreiche Projekte",
+    "CVText": "Herr Siegert hat unter Beweis gestellt, dass er sich kurzfristig in neue Aufgaben einarbeiten kann. Schon nach sehr kurzer Zeit war er in der Lage, die erlernten Fachkenntnisse erfolgreich in die Arbeitsabläufe umzusetzen. Dank seiner sehr schnellen Auffassungsgabe fand er sich auch in neuen Situationen stets sicher und souverän zurecht.",
+    "CVBottomLine": "-Crossnative Arbeitszeugnis",
+    "PythonText": "Python ist ideal für Machine Learning und Datenanalyse. Ich entwickle Modelle und Datenpipelines mit Bibliotheken wie Pandas, NumPy, TensorFlow, Keras und Scikit-Learn und liefere skalierbare, effiziente Lösungen für Klassifikation, Regression, Clustering und NLP.",
+    "DartTextTop": "Dart und Flutter ermöglichen leistungsstarke, plattformübergreifende Apps. Ich entwickle responsive mobile Anwendungen für iOS und Android mit intuitiven Benutzeroberflächen.",
+    "DartTextBottom": "Mit Dart und Flutter erstelle ich hochwertige Apps, die schnell, funktional und optisch ansprechend sind, inklusive individueller UIs und effizientem State-Management.",
+    "PythonTextTop": "Python ist ideal für Machine Learning. Ich nutze Bibliotheken wie Pandas, NumPy, TensorFlow, Keras und Scikit-Learn, um Modelle und Datenpipelines zu entwickeln.",
+    "PythonTextBottom": "So erstelle ich skalierbare, effiziente Machine-Learning-Modelle für Klassifikation, Regression, Clustering und NLP.",
+    "TSTextTop": "TypeScript ist zentral für moderne Webentwicklung. Ich entwickle sauberen, wartbaren Code und nutze gängige Frameworks und Tools des TypeScript-Ökosystems.",
+    "TSTextBottom": "Durch TypeScript und passende Frameworks erstelle ich robuste Anwendungen, die komplexen Geschäftsanforderungen gerecht werden.",
+    "JavaTextTop": "Java ist ideal für skalierbare, sichere Unternehmensanwendungen. Ich entwickle robuste Backend-Systeme und gut strukturierte Anwendungen mit gängigen Frameworks und Tools.",
+    "JavaTextBottom": "Ich baue modulare, wartbare Java-Anwendungen nach Best Practices, z. B. RESTful APIs und Datenbankanbindungen, für maximale Performance und Skalierbarkeit.",
+    "emailHeadLine": "Kontakt aufnehmen:",
+    "emailLine": "E-Mail-Adresse:",
+    "messageLine": "Ihre Nachricht:"
 }

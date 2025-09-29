@@ -3,16 +3,13 @@ import { motion, useAnimation } from 'framer-motion';
 
 import './lang.css';
 import Ts from './subcomponents/ts.tsx';
-import Js from './subcomponents/js.tsx';
-import Kotlin from './subcomponents/kotlin.tsx';
 import Java from './subcomponents/java.tsx';
 import Python from './subcomponents/python.tsx';
 import Dart from './subcomponents/dart.tsx';
-import Go from './subcomponents/go.tsx';
 
 function Lang() {
   const [index, setIndex] = useState(0);
-  const context = [<Ts key="ts" />, <Js key="js" />, <Java key="java" />, <Kotlin key="kotlin" />, <Python key="python" />, <Dart key="dart" />, <Go key="go" />];
+  const context = [<Ts key="ts" />, <Java key="java" />, <Python key="python" />, <Dart key="dart" />];
   const ctl = useAnimation();
 
   const variants = {
@@ -61,55 +58,29 @@ function Lang() {
             alt="TypeScript"
           />
         </button>
-
         <button type="button" onClick={() => handleOptionClick(1)}>
           <img
             className={index === 1 ? 'icon' : 'unselectedIcon'}
-            src="assets/js.webp"
-            alt="JavaScript"
+            src="assets/java.webp"
+            alt="Java"
           />
         </button>
 
         <button type="button" onClick={() => handleOptionClick(2)}>
           <img
             className={index === 2 ? 'icon' : 'unselectedIcon'}
-            src="assets/java.webp"
-            alt="Java"
+            src="assets/python.webp"
+            alt="Python"
           />
         </button>
 
         <button type="button" onClick={() => handleOptionClick(3)}>
           <img
             className={index === 3 ? 'icon' : 'unselectedIcon'}
-            src="assets/kotlin.webp"
-            alt="Kotlin"
-          />
-        </button>
-
-        <button type="button" onClick={() => handleOptionClick(4)}>
-          <img
-            className={index === 4 ? 'icon' : 'unselectedIcon'}
-            src="assets/python.webp"
-            alt="Python"
-          />
-        </button>
-
-        <button type="button" onClick={() => handleOptionClick(5)}>
-          <img
-            className={index === 5 ? 'icon' : 'unselectedIcon'}
             src="assets/dart.webp"
             alt="Dart"
           />
         </button>
-
-        <button type="button" onClick={() => handleOptionClick(6)}>
-          <img
-            className={index === 6 ? 'icon' : 'unselectedIcon'}
-            src="assets/go.webp"
-            alt="Go"
-          />
-        </button>
-
       </div>
       <motion.div
         className="mainBody"

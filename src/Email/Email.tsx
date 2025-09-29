@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './Email.css';
+import { useTranslation } from 'react-i18next';
 
 let db;
 
@@ -25,9 +26,13 @@ function ContactForm() {
     await registration.sync.register('form-sync');
   };
 
+  const { t } = useTranslation();
+
   return (
     <div className="mailSection">
-      <div className="header">Get in Touch: </div>
+      <div className="header">
+        {t('emailHeadLine')}
+      </div>
       <form onSubmit={customSubmit}>
         <div
           className="mailBody"
@@ -37,7 +42,7 @@ function ContactForm() {
               htmlFor="email"
               className="email"
             >
-              Email Address:
+              {t('emailLine')}
 
               <input
                 id="email"
@@ -53,7 +58,7 @@ function ContactForm() {
           </div>
 
           <div className="textField">
-            <div className="messageLabel">Your Message: </div>
+            <div className="messageLabel">{t('messageLine')}</div>
             <textarea
               id="message"
               name="message"

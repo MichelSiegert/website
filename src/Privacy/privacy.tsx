@@ -59,8 +59,6 @@ function Privacy() {
       <p>
         Telefon: 01778720796
         <br />
-        Telefax: [Faxnummer]
-        <br />
         E-Mail: michel@siegert.online
       </p>
 

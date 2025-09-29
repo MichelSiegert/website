@@ -6,7 +6,7 @@ import Quote from './quote/quote.tsx';
 
 function IndexPage() {
   return (
-    <div className="">
+    <div>
       <Introduction />
       <Cards />
       <Quote />

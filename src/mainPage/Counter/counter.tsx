@@ -3,24 +3,28 @@ import {
 } from 'react';
 import './counter.css';
 
-function Counter({ target, duration }) {
+function Counter({ target, duration, decimals = 0 }:
+  { target: number; duration: number; decimals: number }) {
   const [count, setCount] = useState(0);
   const start = 0;
   const requestRef = useRef<number>();
 
   const easeInOutQuad = (t: number) => (t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t);
 
-  const animateCounter = useCallback((startTime) => {
+  const animateCounter = useCallback((startTime: number) => {
     const elapsed = performance.now() - startTime;
     const progress = Math.min(elapsed / duration, 1);
     const easedProgress = easeInOutQuad(progress);
-    const currentValue = Math.floor(start + easedProgress * (target - start));
-    setCount(currentValue);
+    const currentValue = start + easedProgress * (target - start);
+
+    // round to desired decimal places
+    const roundedValue = Number(currentValue.toFixed(decimals));
+    setCount(roundedValue);
 
     if (progress < 1) {
       requestRef.current = requestAnimationFrame(() => animateCounter(startTime));
     }
-  }, [duration, target]);
+  }, [duration, target, decimals]);
 
   useEffect(() => {
     const startTime = performance.now();
@@ -29,7 +33,12 @@ function Counter({ target, duration }) {
     return () => cancelAnimationFrame(requestRef.current);
   }, [target, duration, animateCounter]);
 
-  return <div className="counter">{count}</div>;
+  return (
+    <div className="counter">
+      {count}
+      {decimals > 0 ? '%' : ''}
+    </div>
+  );
 }
 
 export default Counter;

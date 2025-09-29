@@ -1,6 +1,25 @@
 {        
     "title": "Domain of Michel Siegert",
     "CV": "CV",
-    "Home": "home",
-    "Blog": "blog"
+    "Home": "Home",
+    "Blog": "Blog",
+    "heroSectionTitle":"Modern Web Development for the Cloud",
+    "heroSectionSubtitle": "Empower your digital presence, build scalable solutions – as a fullstack developer, I create cloud-native web applications that are robust, adaptable, and ready for the future.",
+    "workExperienceCard": "Years of Work Experience",
+    "ServerUptime":"Service Uptime",
+    "SuccessfulProjects":"Successful Projects",
+    "CVText":"Mr. Siegert demonstrated that he could quickly adapt to new tasks. After a very short time, he was able to apply the acquired technical knowledge very successfully to the work processes. In new situations, Mr. Siegert always adapted confidently and very well due to his very quick comprehension skills. Thanks to his good endurance and stress resilience, he kept a cool head even in difficult situations and was able to act constructively.",
+    "CVBottomLine":"-Crossnative employment reference",
+    "PythonText":"Python is one of the most powerful and versatile languages for machine learning, thanks to its extensive library ecosystem and ease of use. With a strong foundation in Python, I specialize in developing machine learning models and data pipelines that drive insights and innovation. In my machine learning work, I leverage Python’s most popular libraries and frameworks, including: Data Manipulation & Analysis: Pandas, NumPy, SciPy, Machine Learning & Deep Learning: TensorFlow, Keras, Scikit-Learn, OpenCV Data Visualization: Matplotlib, Seaborn By combining these tools, I build, train, and evaluate machine learning models that are accurate, scalable, and efficient. From developing deep learning models with TensorFlow and Keras to processing and analyzing large datasets with Pandas and NumPy, I am dedicated to creating data-driven solutions that meet complex challenges. My experience spans tasks such as classification, regression, clustering, and NLP.",
+    "DartTextTop":"Dart, combined with the Flutter framework, is a powerful tool for building high-performance, cross-platform mobile applications. With a solid background in Dart, I specialize in developing seamless, responsive apps for both iOS and Android, using Flutter’s rich set of widgets and tools to create intuitive user interfaces and smooth user experiences In my experience with Dart and Flutter, I have worked on various projects, employing these essential tools and libraries:",
+    "DartTextBottom":"Using Dart’s concise syntax and Flutter's powerful capabilities, I create high-quality mobile applications that provide fast, responsive experiences, whether users are interacting with the app on Android or iOS devices. From developing custom UIs to implementing robust state management solutions, my focus is on delivering apps that are not only functional but also visually appealing and easy to navigate.",
+    "PythonTextTop":"Python is one of the most powerful and versatile languages for machine learning, thanks to its extensive library ecosystem and ease of use. With a strong foundation in Python, I specialize in developing machine learning models and data pipelines that drive insights and innovation. In my machine learning work, I leverage Python’s most popular libraries and frameworks, including:",
+    "PythonTextBottom":"By combining these tools, I build, train, and evaluate machine learning models that are accurate, scalable, and efficient. From developing deep learning models with TensorFlow and Keras to processing and analyzing large datasets with Pandas and NumPy, I am dedicated to creating data-driven solutions that meet complex challenges. My experience spans tasks such as classification, regression, clustering, and NLP.",
+    "TSTextTop":"TypeScript is a cornerstone of modern web development, known for its powerful features that enhance both reliability and scalability. With several years of experience writing TypeScript code in professional settings, I leverage this language to build clean, efficient, and maintainable applications. I have extensive experience working with key frameworks and tools within the TypeScript ecosystem, including:",
+    "TSTextBottom":"Note that this is not an exhausticve list, many business usecases have required different frameworks. By combining TypeScript with these frameworks and tools, I create robust applications that meet complex business needs while ensuring code quality and consistency across the development lifecycle.",
+    "JavaTextTop":"Java is a cornerstone of enterprise software development, powering scalable, secure, and high-performance applications across industries. With extensive experience in Java, I specialize in creating robust backend systems and well-structured applications that deliver reliability and efficiency. I am skilled in working with a range of popular Java frameworks,       tools, and libraries, including: ",
+    "JavaTextBottom":"Through leveraging these frameworks, I build Java applications that are both modular and maintainable, adhering to industry best practices. Whether developing RESTful APIs, working with relational databases, I emphasize performance and scalability at every step. By choosing Java, I deliver software that meets the rigorous demands of today’s enterprise environments ",
+    "emailHeadLine":"Get in Touch:",
+    "emailLine":"Email Address:",
+    "messageLine":"Your Message:"
 }
