@@ -9,7 +9,7 @@ function Introduction() {
       <section className="video-section">
         <video autoPlay muted loop className="section-video" preload="none" poster="assets/placeholder.webp">
           {' '}
-          <source src="assets/sintro.webm" type="video/webm" />
+          <source src="assets/intro.mp4" type="video/webm" />
           Your browser does not support the video tag.
         </video>
 

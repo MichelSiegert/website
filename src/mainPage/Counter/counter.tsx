@@ -3,10 +3,11 @@ import {
 } from 'react';
 import './counter.css';
 
-function Counter({ target, duration, decimals = 0 }:
-  { target: number; duration: number; decimals: number }) {
+function Counter({
+  target, duration, decimals = 0, start = 0,
+}:
+  { target: number; duration: number; decimals: number, start: number }) {
   const [count, setCount] = useState(0);
-  const start = 0;
   const requestRef = useRef<number>();
 
   const easeInOutQuad = (t: number) => (t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t);
@@ -24,7 +25,7 @@ function Counter({ target, duration, decimals = 0 }:
     if (progress < 1) {
       requestRef.current = requestAnimationFrame(() => animateCounter(startTime));
     }
-  }, [duration, target, decimals]);
+  }, [duration, target, decimals, start]);
 
   useEffect(() => {
     const startTime = performance.now();
