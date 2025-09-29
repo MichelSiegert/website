@@ -21,5 +21,9 @@
     "JavaTextBottom": "Ich baue modulare, wartbare Java-Anwendungen nach Best Practices, z. B. RESTful APIs und Datenbankanbindungen, für maximale Performance und Skalierbarkeit.",
     "emailHeadLine": "Kontakt aufnehmen:",
     "emailLine": "E-Mail-Adresse:",
-    "messageLine": "Ihre Nachricht:"
+    "messageLine": "Ihre Nachricht:",
+        "emailSent":"Nachricht gesendet!",
+    "emailSubmit":"Senden",
+    "greetingHeader":"Hallo!",
+    "greetingText":"Oder wie wir in Norddeutschland sagen: Moin! Ich bin Michel, Fullstack-Entwickler mit einer Leidenschaft für die Entwicklung innovativer Anwendungen und deren Bereitstellung in cloudnativen Umgebungen. Ich habe einen Bachelor in Informatik und mehrere Jahre Erfahrung in der Entwicklung mit Java, Python, Kotlin, JavaScript und TypeScript."
 }

@@ -6,7 +6,7 @@ function Cards() {
   const { t } = useTranslation();
 
   return (
-    <div className="cards">
+    <section className="cards">
       <div className="card">
         <Counter duration={1500} target={4} decimals={0} start={0} />
         <div className="bottomText">{t('workExperienceCard')}</div>
@@ -21,7 +21,7 @@ function Cards() {
         <Counter duration={3000} target={8} decimals={0} start={0} />
         <div className="bottomText">{t('SuccessfulProjects')}</div>
       </div>
-    </div>
+    </section>
   );
 }
 

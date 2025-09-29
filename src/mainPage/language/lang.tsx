@@ -49,7 +49,7 @@ function Lang() {
   };
 
   return (
-    <div className="languagesSection">
+    <section className="languagesSection">
       <div className="Iconbar animated-text-container">
         <button type="button" onClick={() => handleOptionClick(0)}>
           <img
@@ -92,7 +92,7 @@ function Lang() {
         {context[index]}
       </motion.div>
       <div className="continueButton"> </div>
-    </div>
+    </section>
   );
 }
 

@@ -3,10 +3,10 @@ import Greeting from './HelloCard/greetingCard.tsx';
 
 function CV() {
   return (
-    <div style={{ paddingBottom: '50px' }}>
+    <section style={{ paddingBottom: '50px' }}>
       <Greeting />
       <Timeline />
-    </div>
+    </section>
   );
 }
 

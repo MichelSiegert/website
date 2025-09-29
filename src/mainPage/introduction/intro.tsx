@@ -5,7 +5,7 @@ function Introduction() {
   const { t } = useTranslation();
 
   return (
-    <div>
+    <section>
       <section className="video-section">
         <video autoPlay muted loop className="section-video" preload="none" poster="assets/placeholder.webp">
           {' '}
@@ -25,7 +25,7 @@ function Introduction() {
         <div />
 
       </section>
-    </div>
+    </section>
   );
 }
 

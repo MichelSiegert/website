@@ -21,5 +21,9 @@
     "JavaTextBottom":"Through leveraging these frameworks, I build Java applications that are both modular and maintainable, adhering to industry best practices. Whether developing RESTful APIs, working with relational databases, I emphasize performance and scalability at every step. By choosing Java, I deliver software that meets the rigorous demands of today’s enterprise environments ",
     "emailHeadLine":"Get in Touch:",
     "emailLine":"Email Address:",
-    "messageLine":"Your Message:"
+    "messageLine":"Your Message:",
+    "emailSent":"Message Sent!",
+    "emailSubmit":"Submit",
+    "greetingHeader":"Hello!",
+    "greetingText":"Or as we say in Northern Germany: Moin! I’m Michel, a Full Stack Developer passionate about building innovative applications and deploying them in cloud-native environments. I hold a Bachelor’s degree in Computer Science and bring several years of experience with Java, Python, Kotlin, JavaScript, and TypeScript."
 }

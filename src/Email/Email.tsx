@@ -29,7 +29,7 @@ function ContactForm() {
   const { t } = useTranslation();
 
   return (
-    <div className="mailSection">
+    <section className="mailSection">
       <div className="header">
         {t('emailHeadLine')}
       </div>
@@ -71,15 +71,15 @@ function ContactForm() {
                 !submitting
                   ? (
                     <button type="submit" id="submitEmail" disabled={submitting}>
-                      Submit
+                      {t('emailSubmit')}
                     </button>
                   )
-                  : <p className="pb-8">Message sent!</p>
+                  : <p className="pb-8">{t('emailSent')}</p>
                   }
           </div>
         </div>
       </form>
-    </div>
+    </section>
   );
 }
 

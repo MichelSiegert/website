@@ -2,6 +2,7 @@ import './greetingCard.css';
 
 import { useEffect, useRef } from 'react';
 import { motion, useInView, useAnimation } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 function Greeting() {
   const ref = useRef(null);
@@ -19,9 +20,10 @@ function Greeting() {
     hidden: { x: -100, opacity: 0 },
     visible: { x: 0, opacity: 1 },
   };
+  const { t } = useTranslation();
 
   return (
-    <motion.div
+    <motion.section
       ref={ref}
       variants={variants}
       initial="hidden"
@@ -31,20 +33,14 @@ function Greeting() {
     >
       <img className="imageGreeting" src="assets/portrait.webp" alt="portrait of me leaning against a wall." />
       <div style={{ marginLeft: '10px' }}>
-        <div>
-          Hello there!
-        </div>
+        <h1>
+          {t('greetingHeader')}
+        </h1>
         <div className="bottomTextGreeting text-justify hyphenate md:leading-12">
-          Or as we say in Northern Germany: Moin!
-          I am Michel, a Full Stack Developer
-          with a passion for creating innovative applications and
-          deploying them in cloud-native environments. I hold
-          a Bachelor&apos;s degree in Computer Science and have several
-          years of experience developing with Java, Python
-          , Kotlin, JavaScript, and TypeScript.
+          {t('greetingText')}
         </div>
       </div>
-    </motion.div>
+    </motion.section>
   );
 }
 

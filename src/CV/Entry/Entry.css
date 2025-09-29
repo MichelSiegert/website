@@ -3,7 +3,7 @@
     top: 30%;
     width: 60%;
     left: 200px;
-    overflow-y: auto;
+    overflow-y: hidden;
     height: max-content;
     font-size: x-large   ;
 }
@@ -24,7 +24,7 @@
 
 .lowerText{
 
-    overflow: auto;
+    overflow: hidden;
     max-height: 120px;
     max-width: 55vw;
     position: absolute;

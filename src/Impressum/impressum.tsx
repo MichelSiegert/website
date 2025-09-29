@@ -10,7 +10,7 @@ function Impressum() {
     <div id="impressum" className="pl-10 max-w-full pt-3">
       <div className="justify-items-center grid">
         <div className="text-3xl pb-5">Impressum </div>
-        <div className="impressumItems text-lg">
+        <div className="impressumItems w-full justify-evenly text-lg">
           <div className="impressumColumn">
             <div>Website Owner / Operator:</div>
             <div>Name: Michel Siegert</div>
