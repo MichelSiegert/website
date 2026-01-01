@@ -25,5 +25,19 @@
         "emailSent":"Nachricht gesendet!",
     "emailSubmit":"Senden",
     "greetingHeader":"Hallo!",
-    "greetingText":"Oder wie wir in Norddeutschland sagen: Moin! Ich bin Michel, Fullstack-Entwickler mit einer Leidenschaft für die Entwicklung innovativer Anwendungen und deren Bereitstellung in cloudnativen Umgebungen. Ich habe einen Bachelor in Informatik und mehrere Jahre Erfahrung in der Entwicklung mit Java, Python, Kotlin, JavaScript und TypeScript."
+    "greetingText":"Oder wie wir in Norddeutschland sagen: Moin! Ich bin Michel, Fullstack-Entwickler mit einer Leidenschaft für die Entwicklung innovativer Anwendungen und deren Bereitstellung in cloudnativen Umgebungen. Ich habe einen Bachelor in Informatik und mehrere Jahre Erfahrung in der Entwicklung mit Java, Python, Kotlin, JavaScript und TypeScript.",
+      "imprint": {
+    "title": "Impressum",
+    "ownerTitle": "Websitebetreiber:",
+    "name": "Name: Michel Siegert",
+    "contact": "Kontaktinformationen",
+    "addressTitle": "Adresse:",
+    "street": "Waisenhofstraße 27",
+    "city": "24103 Kiel",
+    "country": "Deutschland",
+    "email": "E-Mail: Michel@Siegert.online",
+    "phone": "Telefon: +49 177 87 207 96",
+    "responsible": "Inhaltlich Verantwortlicher gemäß § 18 Abs. 2 MStV: Michel Siegert, Waisenhofstraße 27, 24103 Kiel.",
+    "privacy": "Datenschutzerklärung"
+  }
 }

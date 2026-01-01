@@ -25,5 +25,19 @@
     "emailSent":"Message Sent!",
     "emailSubmit":"Submit",
     "greetingHeader":"Hello!",
-    "greetingText":"Or as we say in Northern Germany: Moin! I’m Michel, a Full Stack Developer passionate about building innovative applications and deploying them in cloud-native environments. I hold a Bachelor’s degree in Computer Science and bring several years of experience with Java, Python, Kotlin, JavaScript, and TypeScript."
+    "greetingText":"Or as we say in Northern Germany: Moin! I’m Michel, a Full Stack Developer passionate about building innovative applications and deploying them in cloud-native environments. I hold a Bachelor’s degree in Computer Science and bring several years of experience with Java, Python, Kotlin, JavaScript, and TypeScript.",
+    "imprint": {
+    "title": "Legal Notice",
+    "ownerTitle": "Website Owner / Operator:",
+    "name": "Name: Michel Siegert",
+    "contact": "Contact Information",
+    "addressTitle": "Address:",
+    "street": "Waisenhofstraße 27",
+    "city": "24103 Kiel",
+    "country": "Germany",
+    "email": "Email: Michel@Siegert.online",
+    "phone": "Phone: +49 177 87 207 96",
+    "responsible": "Content Responsible in accordance with § 18 (2) MStV: Michel Siegert, Waisenhofstraße 27, 24103 Kiel.",
+    "privacy": "Privacy Policy"
+  }
 }
