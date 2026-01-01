@@ -19,7 +19,7 @@ function Navbar() {
 
   return (
     <div id="navbar" className="flex">
-      <div className="flex w-full overflow-x-auto">
+      <div className="flex w-full overflow-x-auto items-center-safe">
         <NavLink
           to="/"
           className="navOptions"
